@@ -1,0 +1,50 @@
+<head>
+    <title>Documentation | Theta Tools</title>
+    <link rel="stylesheet" href="https://resources.izmichael.xyz/assets/tailwind.css">
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script src="/assets/js/docsHandler.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="w-full h-screen flex overflow-hidden">
+        <div class="w-64 h-full overflow-y-auto p-5 text-right border-r-2 border-black">
+            <section class="flex flex-col mb-6">
+                <p class="docs-section-header text-xl mb-2">Getting Started</p>
+                <a class="docs-list" onclick="setPage('getting started', 'usage')">Usage</a>
+                <a class="docs-list" onclick="setPageC('/', 'README')">README</a>
+            </section>
+            <section class="flex flex-col mb-6">
+                <p class="docs-section-header text-xl mb-2">Components</p>
+                <a class="docs-list" onclick="setPage('components', 'contactFormA')">Contact Form A</a>
+                <a class="docs-list" onclick="setPage('components', 'popupBoxA')">Popup Box A</a>
+            </section>
+        </div>
+        <div class="w-full h-full overflow-y-auto">
+            <div class="w-full bg-gray-200 p-6 mb-4 grid grid-cols-1 lg:grid-cols-2 px-10 border-t border-black z-50" id="scroll1">
+                <a href="/" class="w-64 h-full mx-auto lg:mx-0">
+                    <div class="flex lg:ml-0">
+                        <img src="/assets/img/logo-h2.png" class="rounded-full h-16">
+                        <h1 class="text-xl lg:text-3xl place-self-center ml-4">Theta Tools</h1>
+                    </div>
+                </a>
+                <div class="flex justify-end flex-col lg:flex-row">
+                    <a href="/"
+                        class="contributing p-4 text-md lg:text-lg place-self-center">Home</a>
+                    <div class="bg-black lg:w-px w-0 lg:mx-2"></div>
+                    <a href="/contributing" class="contributing p-4 text-md lg:text-lg place-self-center">Contributing</a>
+                    <div class="bg-black lg:w-px w-0 lg:mx-2"></div>
+                    <a href="/docs" class="contributing p-4 text-md lg:text-lg place-self-center border-b-2 border-black">Documentation</a>
+                </div>
+            </div>
+            <p class="text-gray-600 text-sm m-8" id="breadcrumb"><a href="/">Home</a> / <a
+                    href="/docs">Documentation</a> / Getting Started / Usage</p>
+            <div id="docsContainer">
+                <zero-md css-urls='["/assets/md.css"]' src="/docs/pages/getting started/usage.md"
+                    class="mx-8 mb-8" id="docs"></zero-md>
+            </div>
+        </div>
+    </div>
+</body>
