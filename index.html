@@ -1,44 +1,55 @@
 <head>
-    <title>Theta Tools</title>
+    <title id="title">Theta Tools</title>
     <link rel="stylesheet" href="https://resources.izmichael.xyz/assets/tailwind.css">
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script src="/assets/js/main.js"></script>
     <link rel="stylesheet" href="/assets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-    <div class="w-full h-screen">
-        <div class="w-full h-full bg-gray-200 p-10">
-            <div class="bg-white p-6 rounded-lg lg:mt-40 lg:mx-64">
-                <div class="flex justify-center mb-4">
-                    <img src="/assets/img/logo-h2.png" class="rounded-full h-16">
-                    <h1 class="text-3xl place-self-center ml-4">Theta Tools</h1>
-                </div>
-                <p class="text-center">Theta Tools are a set of HTML Based, Tailwind CSS Designed, pre-built components
-                    and assets that can be used in any project.</p>
-                <div class="flex w-full mt-2 gap-5 justify-center">
-                    <a href="/docs" class="bg-blue-200 p-2 block text-center rounded-lg">Get
-                        Started</a>
-                    <a href="/discord" class="bg-blue-200 p-2 block text-center rounded-lg">Discord</a>
-                </div>
+<body pagetitle="Home" onload="pageName()" id="body">
+    <div class="flex flex-col h-full">
+        <div class="absolute sticky top-0 flex flex-row h-20 px-5 bg-gray-300 border-b-2 border-black">
+            <div class="flex flex-row items-center justify-start flex-1">
+                <img src="/assets/img/logo-h2.png" class="h-16">
+                <h1 class="ml-4 text-3xl">Theta Tools -</h1>
+                <h2 class="ml-2 text-3xl" id="pageHeaderName"></h2>
+            </div>
+            <div class="flex flex-row items-center justify-end text-center divide-x-2 divide-black">
+                <a href="/" class="flex items-center justify-end px-4 text-xl">Home</a>
+                <a href="/main" class="flex items-center justify-end px-4 text-xl">Main Docs</a>
+                <a href="/gamma" class="flex items-center justify-end px-4 text-xl">Gamma Docs</a>
+                <a href="/delta" class="flex items-center justify-end px-4 text-xl">Delta Docs</a>
+                <a href="/epsilon" class="flex items-center justify-end px-4 text-xl">Epsilon Docs</a>
             </div>
         </div>
-        <div class="w-full bg-gray-200 p-6 absolute bottom-0 grid grid-cols-1 lg:grid-cols-2 px-10 border-t border-black z-50"
-            id="scroll1">
-            <a href="/" class="w-64 h-full mx-auto lg:mx-0">
-                <div class="flex lg:ml-0 ml-10">
-                    <img src="/assets/img/logo-h2.png" class="rounded-full h-16">
-                    <h1 class="text-xl lg:text-3xl place-self-center ml-4">Theta Tools</h1>
-                </div>
-            </a>
-            <div class="flex justify-end flex-col lg:flex-row">
-                <a href="/"
-                    class="contributing p-4 text-md lg:text-lg place-self-center border-b-2 border-black">Home</a>
-                <div class="bg-black lg:w-px w-0 lg:mx-2"></div>
-                <a href="/contributing" class="contributing p-4 text-md lg:text-lg place-self-center">Contributing</a>
-                <div class="bg-black lg:w-px w-0 lg:mx-2"></div>
-                <a href="/docs" class="contributing p-4 text-md lg:text-lg place-self-center">Documentation</a>
+        <div class="flex flex-col items-center justify-center w-screen bg-gray-300 h-half">
+            <h1 class="text-5xl">Theta Tools</h1>
+            <h3 class="text-2xl">'Theta Tools' are a group of useful tools, components, and templates that can be used
+                in any project.</h3>
+            <div class="flex flex-row gap-10">
+                <button class="p-3 px-10 mt-4 text-2xl text-white bg-blue-500 rounded-lg" style="outline: none;"
+                    onclick="goToPage('main')">Get Started</button>
+            </div>
+        </div>
+        <div class="w-screen p-16 bg-gray-500 h-half" id="sets">
+            <div class="grid w-full h-full grid-cols-3 grid-rows-1 gap-10 text-center">
+                <a href="/gamma"
+                    class="flex flex-col items-center justify-center w-full h-full p-5 transition duration-500 ease-in-out transform bg-gray-200 rounded-lg hover:-translate-y-3 hover:translate-x-3">
+                    <h4 class="text-3xl">Gamma Set</h4>
+                    <p class="text-xl">Theta Tools: Gamma Set is a set of HTML based components, built with Tailwind CSS</p>
+                </a>
+                <a href="/delta"
+                    class="flex flex-col items-center justify-center w-full h-full p-5 transition duration-500 ease-in-out transform bg-gray-200 rounded-lg hover:-translate-y-3 hover:translate-x-3">
+                    <h4 class="text-3xl">Delta Set</h4>
+                    <p class="text-xl">Theta Tools: Delta Set is a set of HTML based website templates</p>
+                </a>
+                <a href="/epsilon"
+                    class="flex flex-col items-center justify-center w-full h-full p-5 transition duration-500 ease-in-out transform bg-gray-200 rounded-lg hover:-translate-y-3 hover:translate-x-3">
+                    <h4 class="text-3xl">Epsilon Set</h4>
+                    <p class="text-xl">Theta Tools: Epsilon Set is a set of CSS based components, based on HTML</p>    
+                </a>
             </div>
         </div>
     </div>

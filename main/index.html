@@ -1,0 +1,46 @@
+<head>
+    <title id="title">Theta Tools</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/tailwind.css">
+    <script src="./assets/js/docsHandler.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/md.css">
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+</head>
+
+<body pagetitle="Main Docs" onload="pageName()" onload="handleFromURL()" id="body">
+    <div class="wholePage">
+        <div class="sidePanel">
+            <div class="panelHeader">
+                <ion-icon name="bookmarks"></ion-icon>
+                <h1 id="pageHeaderName">Documentation</h1>
+            </div>
+            <input type="text" id="menuSearch" onsubmit="search()" onkeyup="search()" placeholder="Search">
+            <div id="menuBar">
+                <li class="menuItem"><a href="#introduction" class="menuItemInner" onclick="handleFromURL()">Introduction</a></li>
+                <li class="menuItem"><a href="#contributing" class="menuItemInner" onclick="handleFromURL()">Contributing</a></li>
+            </div>
+        </div>
+        <div class="pageContent" id="pageContent">
+            <div class="flex flex-row h-10 px-5 mb-8 bg-gray-300 border-b-2 border-black">
+                <div class="flex flex-row items-center justify-start flex-1">
+                    <img src="/assets/img/logo-h2.png" class="h-8">
+                    <h1 class="ml-4 text-xl">Theta Tools</h1>
+                </div>
+                <div class="flex flex-row h-10 border-b-2 border-black">
+                    <div class="flex flex-row items-center justify-end text-center divide-x-2 divide-black text-md">
+                        <a href="/" class="flex items-center justify-end px-4">Home</a>
+                        <a href="/main" class="flex items-center justify-end px-4">Main Docs</a>
+                        <a href="/gamma" class="flex items-center justify-end px-4">Gamma Docs</a>
+                        <a href="/delta" class="flex items-center justify-end px-4">Delta Docs</a>
+                        <a href="/epsilon" class="flex items-center justify-end px-4">Epsilon Docs</a>
+                    </div>
+                </div>
+            </div>
+            <zero-md class="pageMD" id="pageMD" src="./src/introduction.md" no-shadow></zero-md>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>

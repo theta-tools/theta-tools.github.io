@@ -1,8 +1,8 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: "[Bug] - TITLE HERE"
-labels: Bug
+name: Feature
+about: Suggest something to us
+title: "[Feature] - TITLE HERE"
+labels: Feature
 assignees: ''
 
 ---
@@ -10,14 +10,14 @@ assignees: ''
 ## About the Issue
 **Set**
 - [ ] Website
+- [ ] Docs
 - [ ] Gamma Set
 - [ ] Delta Set
 - [ ] Epsilon Set
 
 **Category**
 [ ] Text Based (Typo, etc.)
-[ ] Missing or Inaccurate Info
-[ ] Incorrect / Broken Link
+[ ] New Component
 [ ] Other
 
 ## Content of the Issue

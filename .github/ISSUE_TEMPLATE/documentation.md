@@ -8,6 +8,11 @@ assignees: ''
 ---
 
 ## About the Issue
+**Set**
+- [ ] Gamma Set
+- [ ] Delta Set
+- [ ] Epsilon Set
+
 **Category**
 - [ ] Addition
 - [ ] Modification
