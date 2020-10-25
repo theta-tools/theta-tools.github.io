@@ -1,0 +1,20 @@
+name: Automatic Comment
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  comment:
+    name: Comment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Automatic Comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          pull_request-number: ${{ github.event.pull_request.number }}
+          body: |
+            👋 @${{ github.actor }}
+            
+            Thank you for opening a Pull Reqest. We will try and get back to you as soon as possible.
+            Please make sure you have given us as much context as possible.
+            
+            A manual review has been requested for this PR, as is standard procedure.
