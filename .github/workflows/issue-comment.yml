@@ -16,7 +16,7 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           body: |
-            👋 @${{ github.actor }}
+            👋 @${author}
             
             Thank your for raising a issue. We will try and get back to you as soon as possible.
             Please make sure you have given us as much context as possible.
