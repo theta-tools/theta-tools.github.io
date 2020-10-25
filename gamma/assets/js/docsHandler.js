@@ -2,13 +2,9 @@ function handle(source) {
     var fullSrc = "./src/" + source + ".md";
     var pageMD = document.getElementById("pageMD");
     var container = document.getElementById("pageContent");
-    if (pageMD.getAttribute("src") = fullSrc) {
-        return
-    } else {
-        pageMD.setAttribute("src", fullSrc);
-        var content = container.innerHTML;
-        container.innerHTML = content;
-    }
+    pageMD.setAttribute("src", fullSrc);
+    var content = container.innerHTML;
+    container.innerHTML = content;
 }
 
 async function handleFromURL() {
