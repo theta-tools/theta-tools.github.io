@@ -7,8 +7,7 @@
     <script src="./assets/js/docsHandler.js"></script>
     <script src="/assets/js/main.js"></script>
     <link rel="stylesheet" href="/assets/tailwind.css">
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 </head>
 
 <body pagetitle="Gamma Docs" onload="handleFromURL()">
@@ -35,15 +34,15 @@
                 </div>
                 <div class="flex flex-row h-10 border-b-2 border-black">
                     <div class="flex flex-row items-center justify-end text-center divide-x-2 divide-black text-md">
-                        <a href="/" class="flex items-center justify-end px-4">Home</a>
-                        <a href="/main" class="flex items-center justify-end px-4">Main Docs</a>
-                        <a href="/gamma" class="flex items-center justify-end px-4">Gamma Docs</a>
-                        <a href="/delta" class="flex items-center justify-end px-4">Delta Docs</a>
-                        <a href="/epsilon" class="flex items-center justify-end px-4">Epsilon Docs</a>
+                        <a href="/#introduction" class="flex items-center justify-end px-4">Home</a>
+                        <a href="/main#introduction" class="flex items-center justify-end px-4">Main Docs</a>
+                        <a href="/gamma#introduction" class="flex items-center justify-end px-4">Gamma Docs</a>
+                        <a href="/delta#introduction" class="flex items-center justify-end px-4">Delta Docs</a>
+                        <a href="/epsilon#introduction" class="flex items-center justify-end px-4">Epsilon Docs</a>
                     </div>
                 </div>
             </div>
-            <zero-md class="pageMD" id="pageMD" src="./src/introduction.md" no-shadow></zero-md>
+            <zero-md class="pageMD" id="pageMD" src="./src/introduction.md"></zero-md>
         </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>

@@ -3,8 +3,6 @@ function handle(source) {
     var pageMD = document.getElementById("pageMD");
     var container = document.getElementById("pageContent");
     pageMD.setAttribute("src", fullSrc);
-    var content = container.innerHTML;
-    container.innerHTML = content;
 }
 
 async function handleFromURL() {
