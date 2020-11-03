@@ -10,11 +10,11 @@ jobs:
       - name: Automatic Comment
         uses: peter-evans/create-or-update-comment@v1
         with:
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: |
             👋 @${{ github.actor }}
             
-            Thank you for opening a Pull Reqest. We will try and get back to you as soon as possible.
+            Thank you for opening a Pull Request. We will try and get back to you as soon as possible.
             Please make sure you have given us as much context as possible.
             
             A manual review has been requested for this PR, as is standard procedure.
