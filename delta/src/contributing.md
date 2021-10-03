@@ -7,5 +7,5 @@
 5. Read and follow the `README.md` in the new website template folder
 6. Develop your website template
 7. Submit your website template, along with the `documentation.md` via a pull request
-8. [Follow the steps to add your component to the docs](https://thetatools.xyz/main#contributing)
+8. [Follow the steps to add your component to the docs](https://theta-tools.github.io/main#contributing)
 9. Wait for a moderator to approve your website template 

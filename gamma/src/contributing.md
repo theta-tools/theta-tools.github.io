@@ -7,5 +7,5 @@
 5. Read and follow the `README.md` in the new component folder
 6. Develop your component
 7. Submit your component, along with the `documentation.md` via a pull request
-8. [Follow the steps to add your component to the docs](https://thetatools.xyz/main/contributing)
+8. [Follow the steps to add your component to the docs](https://theta-tools.github.io/main/contributing)
 9. Wait for a moderator to approve your component
