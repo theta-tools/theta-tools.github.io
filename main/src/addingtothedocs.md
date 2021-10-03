@@ -2,8 +2,8 @@
 
 ### Adding Gamma Set and Delta Set components
 
-1. [Open an issue](https://github.com/theta-tools/main-repository/issues/new/choose)
-2. [Fork the repository](https://github.com/theta-tools/main-repository/fork)
+1. [Open an issue](https://github.com/theta-tools/theta-tools.github.io/issues/new/choose)
+2. [Fork the repository](https://github.com/theta-tools/theta-tools.github.io/fork)
 3. Copy the `documentation.md` file from the component folder into the `src` directory inside the set's directory
 4. Rename the `documentation.md` file to the name of your component
 5. Open the `index.html` file inside the set's directory
@@ -14,8 +14,8 @@
 
 ### Adding Epsilon Set components
 
-1. [Open an issue](https://github.com/theta-tools/main-repository/issues/new/choose)
-2. [Fork the repository](https://github.com/theta-tools/main-repository/fork)
+1. [Open an issue](https://github.com/theta-tools/theta-tools.github.io/issues/new/choose)
+2. [Fork the repository](https://github.com/theta-tools/theta-tools.github.io/fork)
 4. Locate the `.md` file, in the `src` directory inside the set's directory, that corresponds to your component
 5. Add your component in the same style as the rest
 6. Submit your changes via a pull request
