@@ -4,7 +4,7 @@
 
 This repository serves as both the Main Repository, and the Repository for `https://theta-tools.github.io`.
 
-You can find information on installation and usage at [https://theta-tools.xyz/docs](https://theta-tools.github.io/docs/)
+You can find information on installation and usage at [https://theta-tools.github.io/docs](https://theta-tools.github.io/docs/)
 
 ## Contributing
 

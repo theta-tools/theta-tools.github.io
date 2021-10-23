@@ -20,5 +20,3 @@
 5. Add your component in the same style as the rest
 6. Submit your changes via a pull request
 7. Wait for a moderator to approve your PR 
-
-<div class="bg-blue-400">a</div>
